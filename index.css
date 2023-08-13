@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #2c1012;
+}
+
+.navbar {
+    border-radius: 30px;
+    background-color: #4e005e;
+    z-index: 1;
+}
+
+#logo {
+    width: 35px;
+    height: 35px;
+}
+
+#headding h3 {
+    display: inline-block;
+    padding-top: 3vh;
+    padding-left: 5vw;
+    color: #fff;
+    font-weight: bold;
+    opacity: 0.7;
+}
+
+footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 10px 0px 0px 20px;
+}
+
+#foot {
+    background-color: black;
+    color: white;
+}
+
+#cart {
+    width: 57px;
+    height: 37px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#cart:hover {
+    transform: scale(1.12);
+    box-shadow: 0 10px 20px #fff;
+}
+
+.card:hover {
+    transform: scale(1.01);
+    box-shadow: 0 10px 20px yellow;
+    cursor: pointer;
+}
+
+#back {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #d2d2d2;
+    color: #4f555c;
+    position: relative;
+    right: 10px;
+}
+
+.company img {
+    width: 8vw;
+    height: 8vw;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.company {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+}
+
+.company img:hover {
+    transform: scale(1.10);
+    box-shadow: 0 10px 20px yellow;
+}
+
+#logOut:hover {
+    background-color: #fff;
+    color: black;
+}
+#icon {
+    display: flex;
+    gap: 20px;
+    font-size: 25px;
+}
+
+@media (max-width: 750px) {
+    .company {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2vw;
+    }
+
+    .company img {
+        width: 14vw;
+        height: 14vw;
+    }
+}

@@ -1,0 +1,199 @@
+body {
+    background-color: #2c1012;
+    min-height: 100vh;
+    width: 100%;
+}
+
+#pic {
+    color: white;
+    position: relative;
+    top: -165px;
+    font-size: 60px;
+    text-align: center;
+}
+
+#frontpic {
+    width: 100%;
+    height: 250px;
+}
+
+#box {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    bottom: 85px;
+    position: relative;
+}
+
+#left {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+#right {
+    width: 50%;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 296px 230px auto;
+}
+
+.box2 {
+    box-sizing: border-box;
+    width: fit-content;
+}
+
+.box2 .form input:nth-child(1) {
+    margin: 25px 0 10px 0;
+}
+
+.box2 .form input {
+    background-color: black;
+    color: white;
+    margin: 10px 0 10px 0;
+    padding: 10px;
+    width: 305px;
+    border-radius: 8px;
+    border: 2px solid white;
+}
+
+.box2 .form textarea {
+    width: 305px;
+    border-radius: 8px;
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    padding: 10px;
+}
+
+.box2 .form button {
+    width: 303px;
+    margin-top: 15px;
+}
+
+.box1 {
+    color: white;
+    width: 280px;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 15px 0 15px 0;
+}
+
+.form {
+    display: grid;
+    justify-content: center;
+    border: 2px solid white;
+    border-radius: 8px;
+    width: 350px;
+}
+
+#sub {
+    margin-bottom: 20px;
+}
+
+#boxlink{
+    text-decoration: none;
+    font-weight: bold;
+    color:white;
+}
+#boxlink:hover{
+    color: yellow;
+    text-decoration: underline;
+}
+
+/* icons css */
+.inconBox {
+    display: flex;
+    align-content: center;
+    margin-left: 10vw;
+}
+
+.inconBox li a i:hover{
+    color: white;
+}
+.inconBox li:nth-child(1):hover
+{
+    background-color:#1818f2;
+}
+.inconBox li:nth-child(2):hover
+{
+    background-color:#1877f2;
+}
+.inconBox li:nth-child(3):hover
+{
+    background-color:#25d366;
+}
+.inconBox li:nth-child(4):hover
+{
+    background-color:#c32aa3;
+}
+.inconBox li {
+    width: 50px;
+    height: 47px;
+    color: blue;
+    background: white;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 5px;
+    border: 2px solid yellow;
+}
+
+.inconBox ul {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+@media (max-width: 760px) {
+    #box {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        position: relative;
+        bottom: 130px;
+        right: 21px;
+    }
+
+    #left {
+        position: relative;
+        left: 24px;
+        width: fit-content;
+        display: grid;
+
+    }
+
+    .box1 {
+        position: relative;
+        left: 35px;
+        color: white;
+        margin: 15px 0 15px 0;
+    }
+
+    #frontpic {
+        width: 100%;
+        height: 150px;
+    }
+
+    #pic {
+        font-size: 35px;
+        top: -124px;
+    }
+
+    .form {
+        width: 330px;
+        position: reltive;
+        right: 11px;
+    }
+    #right{
+        width: fit-content;
+    }
+    .inconBox{
+        margin-left: 4vw;
+    }
+    #foot{
+        width: 99%;
+    }
+}

@@ -1,0 +1,194 @@
+.navbar {
+  border-radius: 30px;
+  background-color: #4e005e;
+  z-index: 1;
+}
+
+#cart {
+  width: 57px;
+  height: 37px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#cart:hover {
+  transform: scale(1.12);
+  box-shadow: 0 10px 20px #fff;
+}
+
+#logo {
+  width: 30px;
+  height: 30px;
+}
+
+body {
+  background-color: white;
+}
+
+#headding h3 {
+  display: inline-block;
+  padding-top: 3vh;
+  padding-left: 5vw;
+  color: #fff;
+}
+
+#space {
+  height: 12px;
+  background-color: black;
+}
+
+
+.card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 10px 20px yellow;
+}
+
+
+footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f8f9fa;
+  padding: 10px 0px 0px 20px;
+}
+
+#foot {
+  background-color: black;
+  color: white;
+}
+
+#cart {
+  width: 57px;
+  height: 37px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#back {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #d2d2d2;
+  color: #4f555c;
+  position: relative;
+  right: 10px;
+}
+
+#orange {
+  background-color: orange;
+  color: white;
+  padding: 3px;
+  border-radius: 5px;
+}
+#orange1{
+  color: orange;
+}
+#share {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+#share li {
+  width: 60px;
+  height: 40px;
+  border: 2px solid black;
+  text-align: center;
+  border-radius: 5px;
+  padding-top: 5px;
+}
+
+#share li i {
+  font-size: 26px;
+}
+
+#share li:nth-child(1):hover {
+  background-color: #4e005e;
+  transform: scale(1.02);
+}
+
+#share li:nth-child(2):hover {
+  background-color: #cd6ae0;
+  transform: scale(1.02);
+}
+
+#share li:nth-child(3):hover {
+  background-color: #b7cf05;
+  transform: scale(1.02);
+}
+
+#share li:nth-child(4):hover {
+  background-color: #6634db;
+  transform: scale(1.02);
+}
+
+#share li i:hover {
+  color: white;
+}
+
+#orderImage {
+  width: 38vw;
+  cursor: pointer;
+}
+
+#logOut:hover {
+  background-color: #fff;
+  color: black;
+}
+
+#addOrder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+}
+
+#icon {
+  display: flex;
+  gap: 20px;
+  font-size: 25px;
+}
+
+@media (max-width: 820px) {
+  #addOrder {
+    width: auto;
+  }
+
+  #foot {
+    width: 99%;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    position: relative;
+  }
+
+  .carouselExampleAutoplaying {
+    margin-top: 56px;
+    /* Adjust this value as needed */
+  }
+
+  #ratting {
+    width: 368px;
+    height: 172px;
+  }
+
+  .container {
+    font-size: 16px;
+  }
+
+  #share {
+    justify-content: center;
+  }
+
+  #orderImage {
+    width: 95vw;
+  }
+
+  #addOrder {
+    width: auto;
+  }
+}

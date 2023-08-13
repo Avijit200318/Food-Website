@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FoodFusionHub/order.</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="order.css">
+  <link rel="shortcut icon" href="food picture/favicon.ico" type="image/x-icon">
+
+<body>
+  <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img id="logo" src="food picture/logo.png" alt=""> FoodFusionHub</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact.html">Contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              All
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#Pizza">Pizza</a></li>
+              <li><a class="dropdown-item" href="#Snacks">Burger</a></li>
+              <li><a class="dropdown-item" href="#Rolls">Rolls</a></li>
+              <li><a class="dropdown-item" href="#Sweets">Sweets</a></li>
+              <li><a class="dropdown-item" href="#IceCream">Ice Cream</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#Biryani">Biryani</a></li>
+              <li><a class="dropdown-item" href="#Chicken">Chicken</a></li>
+              <li><a class="dropdown-item" href="#Cake">Cake</a></li>
+              <li><a class="dropdown-item" href="#">Fried Rice</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input id="bar" class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+            style="width: 53vw">
+          <button class="btn btn-outline-warning" type="submit">Search</button>
+        </form>
+
+        <div class="mx-2">
+          <button id="logOut" class="btn btn-warning">Log out</button>
+          <button id="loginButton" class="btn btn-outline-light">Login</button>
+
+          <button id="signupButton" class="btn btn-outline-light">Signup</button>
+          <img id="cart" src="food picture/logo2.jpg" alt="">
+        </div>
+      </div>
+  </nav>
+  <!-- end of the navbar -->
+
+  <div id="space" class="container" style="background-color:white;"></div>
+  <div class="container" style="background-color:white">
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1" style="font-size:25px">Arsalan Chicken
+          Biryani<span="text-body-secondary" style="font-size:25px">:<br></span=>
+        </h2>
+        <div class="my-3"><span id="orange1">&#9733; &#9733; &#9733; &#9733; &#9734; </span><span id="orange">4.0 rattings</span></div>
+        <span class="lead" style="font-size: 17px; color:red;">Special Price:</span>
+        <h3 style="display:inline-block;font-weight:bold;"> &#8377;199 </h3>
+        <span style="text-decoration: line-through; color: rgb(80, 116, 95);"><del> &#8377;249</del></span>
+        <span style="color:red; font-weight: bold;"> 15% off</span>
+        <p class="lead" style="font-size:17px;">
+        <pre>
+          <h4>Arsalan</h4>North India, Mughlai, Kabab, Rolls and many more.
+          </pre>
+        </p>
+      </div>
+      <div class="col-md-5">
+        <img class="img-fluid " width="400" height="400" src="food picture/briani4.avif" alt="">
+        <div id="addOrder">
+          <button class="btn btn-warning" style="width: 136px;margin: 20px 10px 20px 40px;color: white;">Add to
+            Cart</button>
+          <button class="btn btn-primary" style="width: 136px;margin: 20px 0 20px 0;color: white;">Order</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container" style="background-color: white;">
+    <ul>
+      <li><a href=""></a><i class="fa-regular fa-clock"></i> 30 Min.</li>
+      <li><a href=""><i class="fa-solid fa-indian-rupee-sign"></i></a> &#8377;<b>360 for two.</b></li>
+      <li><a href=""><i class="fa-solid fa-truck"></i></a> 1.2 KM distance. &#8377;20 extra for delivery</li>
+    </ul>
+
+    <ul id="share">
+      <li><a href=""><i class="fa-solid fa-diamond-turn-right"></i></a></li>
+      <li><a href=""><i class="fa-regular fa-bookmark"></i></a></li>
+      <li><a href=""><i class="fa-regular fa-share-from-square"></i></a></li>
+    </ul>
+  </div>
+
+  <div class="container" style="background-color: white;">
+    <h4>Our Payments Partners</h4>
+    <ul id="share">
+      <li><a href=""><i class="fa-brands fa-google-pay"></i></a></i></li>
+      <li><a href=""><i class="fa-brands fa-amazon-pay"></i></a></i></li>
+      <li><a href=""><i class="fa-brands fa-paypal"></i></a></li>
+      <li><a href=""><i class="fa-regular fa-credit-card"></i></a></li>
+    </ul>
+    <div class="my-4">
+      <h4>Recommended:</h4>
+      <img id="orderImage" src="food picture/new order.jpg" alt="">
+    </div>
+  </div>
+
+  <!-- footer strat -->
+  <footer id="foot" class="d-flex py-4" style="width:100%;">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 col-md">
+          <h5>About Us</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="link-secondary text-decoration-none" href="./about.html">Who We Are</a></li>
+            <li><a class="link-secondary text-decoration-none" href="#">Work With Us</a></li>
+            <li><a class="link-secondary text-decoration-none" href="#">Team feature</a></li>
+            <li><a class="link-secondary text-decoration-none" href="./contact.html">Report Fraud</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Resources</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="link-secondary text-decoration-none" href="#">Resource name</a></li>
+            <li><a class="link-secondary text-decoration-none" href="#">Resource</a></li>
+            <li><a class="link-secondary text-decoration-none" href="#">Final resource</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>For Restaurants</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="link-secondary text-decoration-none" href="#">Business</a></li>
+            <li><a class="link-secondary text-decoration-none" href="#">Partner With Us</a></li>
+            <li><a class="link-secondary text-decoration-none" href="#">Apps For You</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Learn More</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="link-secondary text-decoration-none" href="#">Team</a></li>
+            <li><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
+            <li><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
+            <li><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Social Media</h5>
+          <ul id="icon" class="list-unstyled text-small">
+            <li><a href=""><i class="fa-brands fa-square-facebook"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+          </ul>
+        </div>
+        <div id="bottom">
+          <p class="float-end"><a id="backto" href="#"><button id="back"></button></a> </p>
+          <p>© 2023–20XX Company, FoodFusionHub. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="order.js"></script>
+  <script>
+    document.querySelector('#logOut').addEventListener('click', function (event) {
+
+      // Hide the sign-up button
+      document.getElementById('logOut').style.display = 'none';
+      document.getElementById('cart').style.display = 'none';
+      document.getElementById('loginButton').style.display = 'inline-block';
+      document.getElementById('signupButton').style.display = 'inline-block';
+      setTimeout(function () {
+        alert("Logout Sucessful");
+      }, 700)
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
