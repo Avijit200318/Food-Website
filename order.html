@@ -62,9 +62,9 @@
           <button id="loginButton" class="btn btn-outline-light">Login</button>
 
           <button id="signupButton" class="btn btn-outline-light">Signup</button>
-          <img id="cart" src="food picture/logo2.jpg" alt="">
-        </div>
+          <a href="./cart.html"><img id="cart" src="food picture/logo2.jpg" alt=""></a>
       </div>
+    </div>
   </nav>
   <!-- end of the navbar -->
 
@@ -75,7 +75,8 @@
         <h2 class="featurette-heading fw-normal lh-1" style="font-size:25px">Arsalan Chicken
           Biryani<span="text-body-secondary" style="font-size:25px">:<br></span=>
         </h2>
-        <div class="my-3"><span id="orange1">&#9733; &#9733; &#9733; &#9733; &#9734; </span><span id="orange">4.0 rattings</span></div>
+        <div class="my-3"><span id="orange1">&#9733; &#9733; &#9733; &#9733; &#9734; </span><span id="orange">4.0
+            rattings</span></div>
         <span class="lead" style="font-size: 17px; color:red;">Special Price:</span>
         <h3 style="display:inline-block;font-weight:bold;"> &#8377;199 </h3>
         <span style="text-decoration: line-through; color: rgb(80, 116, 95);"><del> &#8377;249</del></span>
@@ -89,9 +90,11 @@
       <div class="col-md-5">
         <img class="img-fluid " width="400" height="400" src="food picture/briani4.avif" alt="">
         <div id="addOrder">
-          <button class="btn btn-warning" style="width: 136px;margin: 20px 10px 20px 40px;color: white;">Add to
+          <button id="addToCartBtn" class="btn btn-warning"
+            style="width: 136px;margin: 20px 10px 20px 40px;color: white;">Add to
             Cart</button>
-          <button class="btn btn-primary" style="width: 136px;margin: 20px 0 20px 0;color: white;">Order</button>
+          <button id="orderItem" class="btn btn-primary"
+            style="width: 136px;margin: 20px 0 20px 0;color: white;">Order</button>
         </div>
       </div>
     </div>
@@ -179,19 +182,7 @@
     </div>
   </footer>
   <script src="order.js"></script>
-  <script>
-    document.querySelector('#logOut').addEventListener('click', function (event) {
 
-      // Hide the sign-up button
-      document.getElementById('logOut').style.display = 'none';
-      document.getElementById('cart').style.display = 'none';
-      document.getElementById('loginButton').style.display = 'inline-block';
-      document.getElementById('signupButton').style.display = 'inline-block';
-      setTimeout(function () {
-        alert("Logout Sucessful");
-      }, 700)
-    });
-  </script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>
